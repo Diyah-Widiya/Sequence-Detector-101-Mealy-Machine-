@@ -66,3 +66,38 @@ Desain mencakup:
 4. Output HIGH akan muncul pada **LED0** jika pola **101** muncul dalam urutan input.  
 
 ### **Flowchart**
+
+# Blok Diagram  
+<img width="629" height="250" alt="image" src="https://github.com/user-attachments/assets/7992a6ba-355d-429f-aa73-e2f0b3810c51" />
+# FSM 
+### Penjelasan Blok  
+- **Input Handler**: Mengambil bit dari switch dan mengirimkan ke FSM.  
+- **Mealy FSM Detector**: Memproses input & state, menghasilkan output langsung jika pola ditemukan.  
+- **Output Driver**: Mengatur LED indikator deteksi pola.
+
+---
+
+# FSM (Mealy Machine)
+
+FSM dirancang untuk mendeteksi pola **101**.
+
+### **State (3 state Mealy)**
+- **S0** – Belum menerima bagian pola  
+- **S1** – Menerima ‘1’  
+- **S2** – Menerima ‘10’  
+
+<img width="303" height="181" alt="image" src="https://github.com/user-attachments/assets/104a3f8d-a7dc-47b0-80a0-106e2b8adeb8" />
+### **Tabel Transisi FSM Mealy (Pola 101)**
+
+| Current State | Input | Next State | Output |
+|---------------|--------|------------|--------|
+| S0 | 0 | S0 | 0 |
+| S0 | 1 | S1 | 0 |
+| S1 | 0 | S2 | 0 |
+| S1 | 1 | S1 | 0 |
+| S2 | 0 | S0 | 0 |
+| S2 | 1 | S1 | 1 ← (pola 101 terdeteksi) |
+
+**Output terjadi saat transisi dari S2 dengan input = 1.**
+
+---
