@@ -12,9 +12,9 @@
 **Sequence Detector Pola 101 Menggunakan Mealy Machine Berbasis FPGA**
 ---
 
-# Deskripsi  
-// ini contoh 
+# Deskripsi 
 [jelaskan deskripsi umum tugas besar yang akan dibuat]
+
 Project ini bertujuan untuk merancang dan mengimplementasikan **sequence detector** berbasis **Mealy Machine** untuk mendeteksi pola bit **101** menggunakan bahasa **Verilog HDL** dan dijalankan pada FPGA **DE1-SoC**.  
 
 Sistem membaca input bit secara serial, kemudian menghasilkan output **HIGH** secara langsung (pada transisi state) ketika pola **101** terdeteksi. Karena menggunakan **Mealy Machine**, output ditentukan oleh kombinasi *state* dan *input*, sehingga respons deteksi lebih cepat dibandingkan Moore machine.
@@ -29,6 +29,7 @@ Desain mencakup:
 
 # Fungsi 
 [jelaskan fungsi dari tugas besar yang akan dibuat secara singkat]
+
 // ini contoh 
 - Mendeteksi pola **101** pada aliran data input serial  
 - Menghasilkan output HIGH secara langsung saat pola terdeteksi  
@@ -38,6 +39,7 @@ Desain mencakup:
 
 # Fitur dan Spesifikasi  
 [jelaskan fitur yang dimiliki oleh tugas besar yang akan dibuat]
+
 ## **Fitur**
 - Mendeteksi pola biner **101**  
 - Respons deteksi lebih cepat karena Mealy Machine  
@@ -59,6 +61,7 @@ Desain mencakup:
 
 # Cara Penggunaan  
 [Bisa dalam bentuk flowchart agar lebih mudah dimengerti, bisa dalam bentuk poin – poin penjelasan]
+
 ### **Langkah-langkah**
 1. Kompilasi desain di Quartus dan download file `.sof` ke FPGA.  
 2. Berikan input bit menggunakan **SW0**.  
@@ -75,6 +78,7 @@ Desain mencakup:
 
 # FSM 
 [Menjelaskan cara kerja dan transisi dalam FSM]
+
 ### Penjelasan Blok  
 - **Input Handler**: Mengambil bit dari switch dan mengirimkan ke FSM.  
 - **Mealy FSM Detector**: Memproses input & state, menghasilkan output langsung jika pola ditemukan.  
