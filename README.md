@@ -1,6 +1,5 @@
 # Laporan Tugas Besar  
-## Desain FPGA dan SoC 2024  
-### Desain FPGA dan SoC  
+### Kuliah Desain FPGA dan SoC  
 
 **Kelompok** :  
 **Nama–NIM Anggota 1** :  
@@ -11,12 +10,11 @@
 
 # Judul  
 **Sequence Detector Pola 101 Menggunakan Mealy Machine Berbasis FPGA**
-
-[jelaskan judul tugas besar yang akan dibuat]
-
 ---
 
 # Deskripsi  
+// ini contoh 
+[jelaskan deskripsi umum tugas besar yang akan dibuat]
 Project ini bertujuan untuk merancang dan mengimplementasikan **sequence detector** berbasis **Mealy Machine** untuk mendeteksi pola bit **101** menggunakan bahasa **Verilog HDL** dan dijalankan pada FPGA **DE1-SoC**.  
 
 Sistem membaca input bit secara serial, kemudian menghasilkan output **HIGH** secara langsung (pada transisi state) ketika pola **101** terdeteksi. Karena menggunakan **Mealy Machine**, output ditentukan oleh kombinasi *state* dan *input*, sehingga respons deteksi lebih cepat dibandingkan Moore machine.
@@ -29,7 +27,9 @@ Desain mencakup:
 
 ---
 
-# Fungsi  
+# Fungsi 
+[jelaskan fungsi dari tugas besar yang akan dibuat secara singkat]
+// ini contoh 
 - Mendeteksi pola **101** pada aliran data input serial  
 - Menghasilkan output HIGH secara langsung saat pola terdeteksi  
 - Menunjukkan implementasi Mealy FSM pada FPGA  
@@ -37,7 +37,7 @@ Desain mencakup:
 ---
 
 # Fitur dan Spesifikasi  
-
+[jelaskan fitur yang dimiliki oleh tugas besar yang akan dibuat]
 ## **Fitur**
 - Mendeteksi pola biner **101**  
 - Respons deteksi lebih cepat karena Mealy Machine  
@@ -58,7 +58,7 @@ Desain mencakup:
 ---
 
 # Cara Penggunaan  
-
+[Bisa dalam bentuk flowchart agar lebih mudah dimengerti, bisa dalam bentuk poin – poin penjelasan]
 ### **Langkah-langkah**
 1. Kompilasi desain di Quartus dan download file `.sof` ke FPGA.  
 2. Berikan input bit menggunakan **SW0**.  
@@ -68,10 +68,13 @@ Desain mencakup:
 ### **Flowchart**
 
 # Blok Diagram  
+[Menggambarkan blok-blok yang digunakan, diberi paragraf penjelasan kegunaan dan input output setiap blok]
+// ini contoh 
 <img width="629" height="250" alt="image" src="https://github.com/user-attachments/assets/7992a6ba-355d-429f-aa73-e2f0b3810c51" />
 
 
 # FSM 
+[Menjelaskan cara kerja dan transisi dalam FSM]
 ### Penjelasan Blok  
 - **Input Handler**: Mengambil bit dari switch dan mengirimkan ke FSM.  
 - **Mealy FSM Detector**: Memproses input & state, menghasilkan output langsung jika pola ditemukan.  
@@ -91,15 +94,11 @@ FSM dirancang untuk mendeteksi pola **101**.
 <img width="303" height="181" alt="image" src="https://github.com/user-attachments/assets/104a3f8d-a7dc-47b0-80a0-106e2b8adeb8" />
 ### **Tabel Transisi FSM Mealy (Pola 101)**
 
-| Current State | Input | Next State | Output |
-|---------------|--------|------------|--------|
-| S0 | 0 | S0 | 0 |
-| S0 | 1 | S1 | 0 |
-| S1 | 0 | S2 | 0 |
-| S1 | 1 | S1 | 0 |
-| S2 | 0 | S0 | 0 |
-| S2 | 1 | S1 | 1 ← (pola 101 terdeteksi) |
+<img width="762" height="200" alt="image" src="https://github.com/user-attachments/assets/a1bb5e9f-f80b-4ba2-b9f5-dbbbe2acc1b9" />
+
 
 **Output terjadi saat transisi dari S2 dengan input = 1.**
 
 ---
+
+
