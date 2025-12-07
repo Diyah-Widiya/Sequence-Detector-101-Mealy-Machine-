@@ -92,6 +92,7 @@ FSM dirancang untuk mendeteksi pola **101**.
 - **S2** – Menerima ‘10’  
 
 <img width="303" height="181" alt="image" src="https://github.com/user-attachments/assets/104a3f8d-a7dc-47b0-80a0-106e2b8adeb8" />
+
 ### **Tabel Transisi FSM Mealy (Pola 101)**
 
 <img width="762" height="200" alt="image" src="https://github.com/user-attachments/assets/a1bb5e9f-f80b-4ba2-b9f5-dbbbe2acc1b9" />
