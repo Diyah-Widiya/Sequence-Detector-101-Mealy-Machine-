@@ -112,7 +112,8 @@ FSM dirancang untuk mendeteksi pola **101**.
 Waveform menunjukkan bahwa clock dan input bekerja normal dengan reset = 0 sehingga FSM aktif. Saat input din membentuk urutan 1 → 0 → 1, FSM bergerak melalui state S0 → S1 → S2 → S1. Pada saat FSM berada di S2 dan menerima input 1, output dout menjadi HIGH selama satu siklus clock. Hal ini menandakan bahwa pola 101 berhasil terdeteksi tepat pada transisi yang sesuai dengan karakter Mealy Machine (output muncul berdasarkan state + input). Setelah deteksi, FSM kembali ke state S1 sehingga overlapping dapat dideteksi pada urutan berikutnya. Secara keseluruhan, waveform menunjukkan bahwa sequence detector Mealy 101 berjalan sesuai desain dan berfungsi dengan benar.
 
 # Lampiran (Kode Verilog)
-Kode Verilog ada di sini: [mealy.v](src/mealy.v)
+Kode Verilog ada di sini: [mealy_101.v](src/mealy_101.v) 
+File test: [mealy_101_tb.v](src/mealy_101_tb.v) 
 
 # Link Video Implementasi
 
