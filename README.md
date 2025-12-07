@@ -69,6 +69,8 @@ Desain mencakup:
 
 # Blok Diagram  
 <img width="629" height="250" alt="image" src="https://github.com/user-attachments/assets/7992a6ba-355d-429f-aa73-e2f0b3810c51" />
+
+
 # FSM 
 ### Penjelasan Blok  
 - **Input Handler**: Mengambil bit dari switch dan mengirimkan ke FSM.  
